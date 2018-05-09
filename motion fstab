@@ -1,0 +1,10 @@
+mkdir /mnt/kingston
+
+/etc/fstab
+UUID=d4585dd2-9812-4b0f-8840-0d99bf87b92d /mnt/kingston ext4 defaults,auto,nofail,user,rw 0 0
+
+sudo reboot 
+
+sudo mkdir /mnt/kingston/motion
+
+sudo chown -R motion.motion /mnt/kingston/motion
